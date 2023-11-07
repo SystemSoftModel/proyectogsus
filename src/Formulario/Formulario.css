@@ -1,0 +1,4 @@
+.form-control::placeholder { 
+    color: rgb(164, 164, 164);
+    opacity: 1; 
+}
