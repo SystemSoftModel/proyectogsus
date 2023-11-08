@@ -3,6 +3,14 @@
   --animate-duration: 700ms;
   --animate-delay: 0.9s;
 }
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url('../../src/assets/fonts/fontawesome-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Estilos para el navbar */
 .navbar {
   background-color: #000000;
@@ -70,6 +78,7 @@
   font-weight: 400;
   height: initial;
   overflow: visible;
+  font-family: 'fontawesome';
 }
 
 .img{

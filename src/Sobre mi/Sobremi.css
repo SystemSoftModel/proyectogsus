@@ -1,0 +1,37 @@
+#aboutme{
+    background-color: black;
+  }
+  #aboutme img{
+    width: 50%;
+    height: 50%;
+    margin: 3rem;
+  }
+  #aboutme .vertical-center {
+    display: flex;
+    align-items: center;
+  }
+  #aboutme .container{
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  #aboutme div.container{
+    background-color: black;  
+    
+  }
+  #aboutme div.row{
+    background-color: black;
+    color: white;
+  }
+  
+  #aboutme svg {
+    fill: rgba(245, 245, 32, 0.774); 
+  }
+  #aboutme .circle-text {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 0%; 
+    background-color: yellow; 
+    color: black; 
+  }

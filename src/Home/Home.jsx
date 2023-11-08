@@ -3,6 +3,7 @@ import "animate.css";
 import { useEffect } from "react";
 import { Trabajos } from "../Trabajos/Trabajos";
 import { Formulario } from "../Formulario/formulario";
+import { Sobremi } from "../sobre mi/sobremi";
 
 export function Home() {
   let textEffect = false;
@@ -95,6 +96,7 @@ export function Home() {
         </div>
         
         <Trabajos></Trabajos>
+        <Sobremi></Sobremi>
         <Formulario></Formulario>
 
       </body>
