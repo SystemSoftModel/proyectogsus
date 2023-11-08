@@ -4,11 +4,32 @@
   --animate-delay: 0.9s;
 }
 
+* {
+  font-family: 'JosefinSans';
+}
+
 @font-face {
-  font-family: 'fontawesome';
-  src: url('../../src/assets/fonts/fontawesome-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'JosefinSans';
+  src: url('../../src/assets/fonts/JosefinSans-Italic-VariableFont_wght.ttf');
+}
+
+/* Animations */
+.sprite {
+  width: 160px;
+  height: 160px;
+  background: url('../../src/assets/animations/idle.gif') no-repeat;
+  animation: play 1s steps(50) infinite;
+
+  z-index: 100;
+  position: fixed;
+  top: 70%;
+  left: -2%;
+}
+
+@keyframes play {
+  from {
+    background-position: 0;
+  }
 }
 
 /* Estilos para el navbar */
@@ -78,7 +99,6 @@
   font-weight: 400;
   height: initial;
   overflow: visible;
-  font-family: 'fontawesome';
 }
 
 .img{

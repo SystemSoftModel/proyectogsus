@@ -5,19 +5,46 @@ import { Trabajos } from "../Trabajos/Trabajos";
 import { Formulario } from "../Formulario/formulario";
 import { Sobremi } from "../sobre mi/sobremi";
 
+import URL_IDLE from "../../src/assets/animations/idle.gif";
+import URL_SWORD from "../../src/assets/animations/sword.gif";
+import URL_RUN from "../../src/assets/animations/run.gif"
+
 export function Home() {
   let textEffect = false;
+  const initializeAnimations = () => {
+    var sprite = document.querySelector('.sprite');
+    sprite.typeAnimation = 'idle';
+
+    document.addEventListener('click', () => {
+      sprite.style.background = "url('" + URL_SWORD +"') no-repeat";
+      sprite.typeAnimation = 'sword';
+    });
+    document.addEventListener('scroll', () => {
+      sprite.style.background = "url('" + URL_RUN +"') no-repeat";
+      sprite.typeAnimation = 'sword';
+    });
+
+    sprite.addEventListener('animationiteration', () => {
+      if (sprite.typeAnimation !== 'idle') {
+        sprite.style.background = "url('" + URL_IDLE +"') no-repeat";
+        sprite.typeAnimation = 'idle';
+      }
+    })
+  }
+
   useEffect(() => {
-    // Ensure that jQuery is available and the component is mounted
     if (window.jQuery && !textEffect) {
-      // Use the .textrotator method from the plugin
       $(".rotate").textrotator();
       textEffect = true;
     }
+
+    initializeAnimations();
   }, []);
 
   return (
     <>
+    <div class="sprite"></div>
+
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
           <div className="container">
