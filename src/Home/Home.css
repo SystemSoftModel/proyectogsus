@@ -1,3 +1,7 @@
+body{
+  background-color: rgb(0, 0, 0) !important;
+}
+
 /*estilo animacion*/
 :root {
   --animate-duration: 700ms;
@@ -120,10 +124,7 @@
   --animate-duration: 2s;
 }
 
-.colorfondo{
-  background-color: black !important;
-}
-
 .border{
   border-radius: 100% solid #ffffff;
 }
+

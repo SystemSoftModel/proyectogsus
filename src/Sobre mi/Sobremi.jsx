@@ -20,7 +20,7 @@ export function Sobremi() {
                   classname="img-fluid w-100"
                 />
               </div>
-              <div className="row">
+              <div className="row float-left">
                 <p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
