@@ -35,3 +35,7 @@
     background-color: yellow; 
     color: black; 
   }
+  @media (min-width: 768px) {
+    /* Medium screens and larger */
+   
+  }

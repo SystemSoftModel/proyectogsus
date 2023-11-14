@@ -5,14 +5,14 @@ export function Sobremi() {
       <title>Formulario</title>
       <link rel="stylesheet" href="/estilos.css" />
       <div className="container">
-        <div className="row-12">
+        <div className="row">
           <div className="col-12 circle-text">
             <h5>SOBRE MÍ</h5>
           </div>
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <div className="row1">
                 <img
                   src="../../src/assets/img/jsusimg.png"
@@ -68,7 +68,7 @@ export function Sobremi() {
                 </p>
               </div>
             </div>
-            <div className="col-6 vertical-center">
+            <div className="col-12 col-md-6 vertical-center">
               "Desarrollador automotivado con más de 6 años de experiencia en el
               sector. Un apasionado de la programación. Especialmente interesado
               en compartir y adquirir conocimientos con la propuesta de lograr

@@ -23,9 +23,7 @@ export function Formulario() {
               <br />
               <br />
               <br />
-              <duv className="row">
-                
-              </duv>
+
               <div className="col-6 text-end">
                 <i className="bi bi-envelope border rounded-circle p-3 text-warning" />
               </div>
